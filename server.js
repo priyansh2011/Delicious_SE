@@ -50,16 +50,7 @@ app.post("/email2", (req,res)=>{
     }
   });
 });
-// fname,
-// lname,
-// email,
-// address,
-// country,
-// state,
-// zip,
-// payment,
-// items,
-// totalPrice
+
 app.post("/email3", (req,res)=>{
   //send Email
   const {fname, lname, email, address, phone, country, state, zip, payment, items, totalPrice}=req.body;
