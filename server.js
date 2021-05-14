@@ -10,8 +10,8 @@ const request=require("request");
 const log=console.log;
 const app =express();
 app.use(express.static("public"));
-
-const PORT = process.env.PORT || 3000;
+//
+// const PORT = ;
 app.get("/",(req, res)=>{
   res.sendFile(__dirname+"/index.html");
 })
@@ -65,6 +65,6 @@ app.post("/email3", (req,res)=>{
   });
 });
 
-app.listen(PORT,()=>{
+app.listen(process.env.PORT || 3000,()=>{
   log("Server is starting on port, ",3000);
 })
